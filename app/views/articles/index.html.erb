@@ -1,8 +1,143 @@
-<h1>Articles</h1>
 
-Our blog has <%= Article.public_count %> articles and counting!
 
-<ul>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Enis Uzan</title>
+
+</head>
+
+
+  
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('startbootstrap-clean-blog-gh-pages/img/ruby-bg.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>Enis Uzan</h1>
+            <span class="subheading">Yazılımcının Günlüğü</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="post-preview">
+          <a href="articles/1">
+            <h2 class="post-title">
+              2021'in En Popüler 10 Programlama Dili
+            </h2>
+            <h3 class="post-subtitle">
+              Detaylar için tıklayınız...
+            </h3>
+          </a>
+          <p class="post-meta">Posted by
+            <a href="#">Enis UZAN</a>
+            on March 15, 2021</p>
+        </div>
+        <hr>
+        <div class="post-preview">
+          <a href="post.html">
+            <h2 class="post-title">
+              Lorem ipsum dolor sit amet
+            </h2>
+          </a>
+          <p class="post-meta">Posted by
+            <a href="#">Enis UZAN</a>
+            on March 15, 2021</p>
+        </div>
+        <hr>
+        <div class="post-preview">
+          <a href="post.html">
+            <h2 class="post-title">
+              Lorem ipsum dolor sit amet
+            </h2>
+            <h3 class="post-subtitle">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit
+            </h3>
+          </a>
+          <p class="post-meta">Posted by
+            <a href="#">Enis UZAN</a>
+            on March 15, 2021</p>
+        </div>
+        <hr>
+        <div class="post-preview">
+          <a href="post.html">
+            <h2 class="post-title">
+              Lorem ipsum dolor sit amet
+            </h2>
+            <h3 class="post-subtitle">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe nostrum ullam eveniet pariatur voluptates odit
+            </h3>
+          </a>
+          <p class="post-meta">Posted by
+            <a href="#">Enis UZAN</a>
+            on March 15, 2021</p>
+        </div>
+        <hr>
+        <!-- Pager -->
+        <div class="clearfix">
+          <a class="btn btn-primary float-right" href="/articles">Older Posts &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="#" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="https://github.com/uzanenis" target="_blank">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy; Enis Uzan 2021</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+<ul class=>
   <% @articles.each do |article| %>
     <li>
       <%= link_to article.title, article %>
